@@ -1,0 +1,40 @@
+[
+ {
+    "Title":"Verify that the changed stake percentage is reflected in the stake list",
+     "TestCase_id":"1",
+     "Preconditions": {
+         "1": "User must be logged into the system with permissions to view the Stake list page",
+         "2": "The Stake list should be populated with at least one stakeholder"
+     },
+     "Steps":{
+         "1":"Click on the Stake management icon in the Dashboard",
+         "2":"Scroll down to Stake list",
+         "3":"Click on a stakeholder in the list",
+         "4":"Change the stake percentage within the modal",
+         "5":"Click on the Save changes button",
+         "6":"Review the stake amount of the stakeholder in the Percentage column"
+     },
+     "Expected result":"The stake percentage should be updated in the stake list"  
+ },      
+ { 
+     "Title":"Verify the functionality of the Date sorting buttons in the Transactions table",
+     "TestCase_id":"2",
+     "Preconditions": {
+         "1": "User must be logged into the system with permissions to view the Transactions page",
+         "2": "The Transactions table should be populated with multiple records with different dates"
+     },
+     "Test Data": "Transactions recorded on multiple dates (ensure a mix of recent and older dates)",
+     "Steps": {
+         "1":"Click on the Transactions icon in the Dashboard",
+         "2":"Note the initial order of the dates in the Transactions table before sorting",
+         "3":"Click on the Date sorting buttons of the Transaction table",
+         "4":"Review that the transactions are sorted by date from the oldest to the most recent",
+         "5":"Click on the Date sorting buttons again to sort the transactions by date in descending order (newest at the top)",
+         "6":"Review that the transactions are sorted by date from the most recent to the oldest"
+     },
+     "Expected result": {  
+         "1":"After clicking the Date sorting buttons once, the transactions should be correctly sorted in ascending order by date",
+         "2":"After clicking the Date sorting buttons second time, the transactions should be correctly sorted in descending order by date"
+     }
+ }   
+]
