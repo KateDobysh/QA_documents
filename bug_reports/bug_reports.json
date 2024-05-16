@@ -1,0 +1,54 @@
+[
+  {
+    "Title": "The refunded amount is not deducted from the Current balance",
+    "Bug_id": "1",
+    "Priority": "High",
+    "Environment": "Windows (x86) 11, Chrome 124.0.6367.119",
+    "Steps_to_reproduce": {
+      "1": "Go to the transaction list",
+      "2": "Click on a Approved transaction",
+      "3": "Click on the Refund button within the modal",
+      "4": "Check the Current balance amount"
+    },
+    "Expected_result": "The Current balance decreased by the amount of the refund",
+    "Actual_result": "The Current balance remained the same amount as before the refund",
+    "Attachements": "https://jam.dev/c/1",
+    "Status": "Open"
+  },
+  {
+    "Title": "The created transaction form is listed in the table",    
+    "Bug_id": "2",
+    "Priority": "High",
+    "Environment": "Windows (x86) 11, Chrome 124.0.6367.119",    
+    "Steps_to_reproduce": {
+      "1": "Go to the Transaction forms page",
+      "2": "Click on the Create Transaction form",
+      "3": "Fill in the required fields",
+      "4": "Click on the Create button",
+      "5": "Search for the created Transaction form in the table"
+    },
+    "Expected_result": "Created Transaction form is listed in the table",
+    "Actual_result": "Created Transaction form is not listed in the table",
+    "Attachements": "https://jam.dev/c/2",
+    "Status": "Open"
+  },
+  {
+    "Title": "The participant's invitation email is not sent",
+    "Bug_id": "3",
+    "Priority": "High",
+    "Environment": "Windows (x86) 11, Brave 1.65.130",   
+    "Steps_to_reproduce": {
+      "1": "Go to Settings page",
+      "2": "Click on the Participant tab",
+      "3": "Click on the Add new participant button",
+      "4": "Add a valid e-mail",
+      "5": "Click on the Send button",
+      "6": "Ensure the status of the participant Waiting for accept",
+      "7": "Check the inbox folder of your email"
+    },
+    "Expected_result": "The invitation email containing the link to follow is successfully delivered",
+    "Actual_result": "The invitation email is not arrived",
+    "Attachements": "https://www.awesomescreenshot.com/video/3",
+    "Status": "Open"
+  }
+]
